@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title></title>
+	<style type="text/css">
+		#profile{
+			width: 225px;
+			height: 200px;
+		}
+
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	background: #f3f3f3;
+	flex-direction: column;
+	margin: 0;
+}
+
+.main {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	transition: transform 0.2s;
+	width: 500px;
+	text-align: center;
+}
+
+h1 {
+	color: #4CAF50;
+}
+
+#login-container {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #28c7e6;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 131, 153, 0.8);
+	width: 300px;
+}
+
+input:focus {
+	background-color: #f0f0f0;
+}
+
+button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-top: 15px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background-color: #007bff;
+	width: 100%;
+	font-size: 16px;
+}
+
+label {
+	color: #333;
+	font-weight: bold;
+}
+
+
+.wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+	</style>
+</head>
+<body style="background-color: white;">
+
+  <center>
+  	<div id="login-container">
+  	  <div class="col-md-10">
+  	  	<img id="profile" src="MeIrl.jpg"><br><br>
+  <form action="indexMn.html" class="form-group">
+  	 <label>Login here</label><br>
+  	 <input type="text" class="form-control bg-light" name="email" id="email" placeholder="Email here">
+  	 <br>
+
+  	 <label>Password</label><br>
+  	 <input type="text" class="form-control bg-light" name="password" id="password" placeholder="Password here">
+  	 <br>
+
+     <a href="indexMn.html"><button class="btn btn-success">Login</button></a>
+     <a href="index.html"><button class="btn btn-info">Reset</button></a>
+  	
+  </form>
+  </div>
+</div>
+</center>
+     <script type="text/javascript">
+     	document.getElementsById("email").placeholder = "Email:"; //this is label for email input box
+
+     	document.getElementsById("password").placeholder = "Password:"; //this is label for password input box
+     </script>
+</body>
+</html>
